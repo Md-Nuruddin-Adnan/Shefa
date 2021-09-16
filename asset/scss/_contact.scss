@@ -1,0 +1,81 @@
+#contact {
+    padding: 80px 0;
+    position: relative;
+
+    .circle_full_white {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+
+    .card{
+        padding: 80px 30px;
+        position: relative;
+        border: none;
+        border-radius: 20px;
+        z-index: 10;
+
+        &::after {
+            content: '';
+            width: 95%;
+            height: 20px;
+            background: rgba(#d7d7d7, 0.2);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -2;
+        }
+
+        .circle_full_color {
+            position: absolute;
+            top: -85px;
+            left: 85%;
+            width: 150px;
+        }
+
+        .form {
+            .form-group{
+                position: relative;
+                margin-bottom: 20px;
+
+                label {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: rgba(#6e6e6e, 0.7);
+                    position: absolute;
+                    top: 15px;
+                    margin: 10px;
+                    padding: 0 10px;
+                    background: $color-white;
+                    -webkit-transition: top .2s ease-in-out, 
+                                        font-size .2s ease-in-out;
+                    transition: top .2s ease-in-out, 
+                                font-size .2s ease-in-out;
+                }
+                
+                .active {
+                top: -25px;
+                font-size: 16px;
+                }
+                
+                .form-control {
+                    border: 1px solid rgba(#6a697f, 0.3);
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: $color-blue;
+                    min-height: 70px;
+                    padding: 0 20px;
+                } 
+                
+                input:focus {
+                outline: none;
+                }
+            }
+        }
+    }
+}

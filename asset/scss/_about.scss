@@ -1,0 +1,10 @@
+#about {
+    position: relative;
+
+    .circle_full_white {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}

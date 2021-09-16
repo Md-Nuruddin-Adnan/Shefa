@@ -1,0 +1,78 @@
+#header {
+    background: url(../images/banner_bg.png) no-repeat bottom center / cover;
+    min-height: 100vh;
+
+    @media (max-width: 1700px) {
+        background: url(../images/banner_bg.png) no-repeat bottom right / cover;
+    }
+    @media (max-width: 991px) {
+        background: url(../images/banner_bg.png) no-repeat center right / cover;
+    }
+
+    // navbar start
+    .navbar {
+        padding-top: 20px;
+        .contact-btn {
+            font-size: 20px;
+            font-weight: 700;
+            color: $color-blue;
+            background: $color-white;
+            border-radius: 50px;
+            min-width: 150px;
+
+            &:hover {
+                box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    // navbar end
+
+    // banner start
+    .banner {
+        padding: 100px 0;
+        .text {
+            h1 {
+                font-size: 75px;
+                font-family: 'Poppins', sans-serif;
+                color: $color-white;
+                white-space: nowrap;
+                line-height: normal;
+                font-weight: 400;
+                @media (max-width: 1399px) {
+                    font-size: 55px;
+                }
+                @media (max-width: 575px) {
+                    font-size: 40px;
+                }
+
+                strong{
+                    font-weight: 700;
+                }
+                
+                img {
+                    vertical-align: initial;
+                    width: 60px;
+                    @media (max-width: 1399px) {
+                        width: 45px;
+                    }
+                    @media (max-width: 575px) {
+                        width: 35px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                color: $color-white;
+                line-height: 36px;
+                white-space: pre-line;
+                padding: 15px 0 30px 0;
+                @media (max-width: 1399px) {
+                    white-space: normal;
+                }
+            }
+        }
+    }
+    // banner end
+}

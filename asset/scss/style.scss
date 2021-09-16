@@ -1,0 +1,20 @@
+/*=== global css start === */
+@import 'global';
+/*===// end of global css === */
+
+/*=== config css start === */
+@import 'config';
+/*===// end of config css === */
+
+/*=== common css start === */
+@import 'common';
+/*===// end of common css === */
+
+/*=== components start === */
+@import 'header';
+@import 'about';
+@import 'services';
+@import 'testimonial';
+@import 'contact';
+@import 'footer';
+/*===// end of components === */

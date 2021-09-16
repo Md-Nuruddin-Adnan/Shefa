@@ -1,0 +1,33 @@
+.footer {
+    background: url(../images/footer_bg.png) no-repeat top left/cover;
+    padding: 150px 0 50px 0;
+
+  
+    .social-icon {
+        a {
+            width: 40px;
+            height: 40px;
+            background: rgba(#53d3ff, 0.2);
+            display: block;
+            border-radius: 50%;font-size: 30px;
+            font-size: 20px;
+            color: $color-white;
+            text-align: center;
+            line-height: 40px;
+            margin: 5px;
+            transition: all 0.3s linear;
+
+            &:hover {
+                background: #00dadc;
+            }
+        }
+    }
+
+    .copyright {
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        color: #f7fbff;
+        text-align: center;
+        margin-top: 25px;
+    }
+}
